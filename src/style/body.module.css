@@ -1,0 +1,66 @@
+.container {
+	width: 80%;
+	margin: auto;
+}
+/* SlideList styling starts */
+.listCont {
+	display: flex;
+	flex-direction: row;
+	column-gap: 0.5rem;
+	margin-top: 1rem;
+	position: relative;
+}
+.listContItem {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	padding: 0.5rem;
+	column-gap: 0.5rem;
+	box-shadow: 0px 1.47737px 17.7284px 4.43211px rgba(208, 214, 227, 0.3);
+	border-radius: 12px;
+}
+.listItemDesc {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.2rem;
+	padding: 0.5rem;
+}
+.listItemImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* border: 1px solid black; */
+}
+.listItemImg img {
+	background-color: red;
+	height: auto;
+	width: auto;
+	object-fit: contain;
+	margin: auto;
+}
+.listItemDesc p {
+	margin: 0;
+	/* border: 1px solid black; */
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+.listItemDesc p:first-child {
+	color: #656c7e;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: 400;
+}
+/* SlideList styling ends */
+
+@media (max-width: 900px) {
+	.container {
+		width: 90%;
+		margin: auto;
+	}
+	.listItemDesc p {
+		font-size: 1.1rem;
+	}
+}

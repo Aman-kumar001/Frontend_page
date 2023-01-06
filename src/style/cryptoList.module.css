@@ -1,0 +1,128 @@
+.container {
+}
+.title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+.filterList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+.filterList div:first-child {
+	display: flex;
+	flex-direction: row;
+	column-gap: 0.5rem;
+}
+.filterList div:last-child p {
+	color: #5b667c;
+	margin: 0;
+}
+.filterList div:last-child p input {
+	width: 3rem;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	text-align: right;
+	background-color: #eff2f5;
+	border: none;
+	padding: 0.5rem;
+	border-radius: 8px;
+}
+.filterList div:first-child p {
+	padding: 0.5rem 1rem;
+	/* border: 1px solid black; */
+	background: #eff2f5;
+	border-radius: 8px;
+	margin: 0;
+	color: #5b667c;
+}
+/* rendering list */
+.listComp {
+	width: 100%;
+	/* background-color: red; */
+}
+.listComp table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.listComp table tr {
+	border-top: 1px solid #eff2f5;
+	font-size: 0.9rem;
+	/* background-color: red; */
+}
+
+.listComp table th {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 0.7rem;
+	padding: 0.7rem 0.5rem;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.listComp table td {
+	font-family: 'Inter';
+	font-weight: 400;
+	padding: 1rem 0.5rem;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 0.85rem;
+	margin: 0;
+	/* border: 1px solid black; */
+}
+.listComp table td div,
+.listComp table th div {
+	display: flex;
+	align-items: center;
+	column-gap: 0.2rem;
+	justify-content: center;
+}
+.lineBar {
+	height: 6px;
+	width: 80%;
+	margin: auto;
+	background-color: #eff2f5;
+	border-radius: 3px;
+	margin-top: 0.4rem;
+}
+.lineBar div {
+	height: 100%;
+	border-radius: 3px;
+	background-color: #cfd6e4;
+	width: 60%;
+}
+
+/* pagination */
+.pageNums {
+	margin: 2rem 0;
+	display: flex;
+	justify-content: right;
+}
+.pageNums div {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	/* border: 1px solid black; */
+	justify-content: right;
+	column-gap: 0.2rem;
+}
+.pageNums span {
+	border: 1px solid #dfe3e8;
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+	.pageNums {
+		justify-content: center;
+	}
+}
