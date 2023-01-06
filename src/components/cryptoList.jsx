@@ -99,7 +99,9 @@ const CryptoList = ({ width }) => {
 						</svg>
 					</span>
 
-					<span>{page}</span>
+					<span style={{ border: '1px solid #0052FE', color: '#0052FE' }}>
+						{page}
+					</span>
 					{page < 10 && (
 						<span
 							onClick={() => {
